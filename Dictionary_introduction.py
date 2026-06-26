@@ -13,6 +13,8 @@ print(capital.get("France"))
 #.update() 更新键值对
 capital.update({"Malaysia": "Kuala Lumpur"}) #需要放{}
 print(capital.get("Malaysia"))
+capital["Thailand"] = "Bangkok" #这样也可以加(from GPT)
+print(capital.get("Thailand"))
 
 #.pop() 删除键值对
 capital.pop("United States") #不需要放{}

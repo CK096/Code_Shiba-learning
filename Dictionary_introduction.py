@@ -13,6 +13,10 @@ print(capital.get("France"))
 #.update() 更新键值对
 capital.update({"Malaysia": "Kuala Lumpur"}) #需要放{}
 print(capital.get("Malaysia"))
+.update() 有两个用途：#可以一直增加
+如果 key 不存在 → 新增
+如果 key 已存在 → 修改
+
 capital["Thailand"] = "Bangkok" #这样也可以加(from GPT)
 print(capital.get("Thailand"))
 

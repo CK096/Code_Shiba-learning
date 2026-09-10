@@ -7,6 +7,7 @@
 #每一台生产的车子 = 物件 (Object)
 
 class Car:
+    wheels = 4 #可以指点变数
     def __init__(self,make,model,year,color):
         #初始化
         self.make_by = make
@@ -26,5 +27,7 @@ print(car2.make_by)
 print(car2.model)
 print(car2.year)
 print(car2.color)
-
+print(car1.wheels)
+car2.wheels = 2 #可以直接修改变数
+print(car2.wheels)
 car1.stop()

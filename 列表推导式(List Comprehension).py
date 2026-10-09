@@ -15,8 +15,8 @@ print(numbers)
 # x * x (表达式)
 # for x in range(1, 11)：逐个取出数字
 # 外面的 []：创建新的 List
-square = [x * x for x in range(1,11)]#[表达式 for 变量 in 可迭代对象]
-print(square)
+squares = [x * x for x in range(1,11)]#[表达式 for 变量 in 可迭代对象]
+print(squares)
 
 
 grades = [100,90,66,80,46,29,88]
@@ -60,7 +60,7 @@ print(result)
 print(result2)
 print(result3)
 
-=================================================================================================================
+#=================================================================================================================
 #重点理解：三种推导式
 
 #List Comprehension
@@ -74,9 +74,9 @@ print(result3)
 #结果：不重复的价格，且不保证顺序
 
 #Dictionary Comprehension
-用 {key: value} 创建 Dictionary
+#用 {key: value} 创建 Dictionary
 {product["name"]: product["price"] * 0.9 for product in products}
-结果：商品名称对应折后价格
+#结果：商品名称对应折后价格
 
 记住这个关键区别：
 [expression for ...] → List Comprehension

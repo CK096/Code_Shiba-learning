@@ -19,3 +19,18 @@ print(str_list)
 students = [("Lin",170,"C"),("Tan",168,"B"),("Lee",176,"A")]
 sorted_student = sorted(students,key=lambda x: x[1])
 print(students)
+
+================================================================
+
+# Python 中的 map
+
+# map(可迭代的[列表]，函式)
+
+store = [("pant",20),("shirt",30),("Jacket",50),("sock",10)]
+
+to_myr= lambda date: (date[0],date[1] *4.05)
+store_myr = list(map(to_myr, store))
+print(store_myr)
+
+to_usd = list(map(lambda date: (date[0],date[1] /4.05),store))
+print(to_usd)

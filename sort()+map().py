@@ -34,3 +34,12 @@ print(store_myr)
 
 to_usd = list(map(lambda date: (date[0],date[1] /4.05),store))
 print(to_usd)
+
+==============================================================
+# Python中的filter()
+
+friends = [("Bob",18),("lin",17),("lee",19),("Tam",16)]
+
+adult = list(filter(lambda age: age[1] >= 18, friends))
+for friend in adult:
+    print(f"{friend[0]} is adult")

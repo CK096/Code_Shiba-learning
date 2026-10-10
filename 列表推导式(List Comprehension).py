@@ -46,7 +46,7 @@ numbers = [1, 2, 3, 4, 5]
 result = ["Big" if i >=3 else "Small" for i in numbers]
 print(result)
 
-# List,Set,Dictionary
+# List 生成 (List,Set,Dictionary)
 students = [
     {"name": "Alice", "score": 85},
     {"name": "Bob", "score": 55},
@@ -63,17 +63,17 @@ print(result3)
 #=================================================================================================================
 #重点理解：三种推导式
 
-#List Comprehension
+#List to List Comprehension
 #用 [] 创建 List
 [product["price"] * 0.9 for product in products]
 #结果：一组价格，保留顺序和重复值
 
-#Set Comprehension
+#List to Set Comprehension
 #用 {} 创建 Set
 {product["price"] * 0.9 for product in products}
 #结果：不重复的价格，且不保证顺序
 
-#Dictionary Comprehension
+#List to Dictionary Comprehension
 #用 {key: value} 创建 Dictionary
 {product["name"]: product["price"] * 0.9 for product in products}
 #结果：商品名称对应折后价格

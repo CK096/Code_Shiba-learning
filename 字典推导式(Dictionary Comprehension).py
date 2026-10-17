@@ -47,8 +47,15 @@ temperatures = {"Kuala Lumpur": 32,"Tokyo": 18,"Seoul": 12,"Bangkok": 35,"London
 
 result = {key : "Hot" if value >=20 else "Cold" for key,value in temperatures.items()}
 print(result)
-
+#
 prices = {"Apple": 100,"Banana": 50,"Orange": 80,"Mango": 150}
 
 result = {key.upper() : round(value * 0.9 if value >= 100 else value * 1.1,2) for key,value in prices.items()}
 print(result)
+#
+sales = {"Alice": 0.85,"Bob": 0.45,"Charlie": 0.92,"David": 0.38,"Emma": 0.70}
+
+result = {key: f"{value *100:.0f}%" for key,value in sales.items() if value >= 0.70}
+result2 = {key: str(int(value * 100)) + "%" for key,value in sales.items() if value >= 0.70}
+print(result)
+print(result2)

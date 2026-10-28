@@ -20,3 +20,28 @@ finally: #不管正确或错误，都会执行这段程式码
     print("无论有没有错误，都会执行这个")
 
 
+#exp
+inventory = {
+    "Mouse": 15,
+    "Keyboard": 8,
+    "Monitor": 3
+}
+
+item = input("Enter Product Name: ").title()
+if item in inventory:
+    print(f"this product on store now has {inventory[item]}")
+else:
+    print("Product Not Found")
+    exit()
+try:
+    qty = int(input("Qty your want to Buy: "))
+except ValueError:
+    print("Invalid Number")
+else:
+    if qty > inventory[item]:
+        print("Qty no enough")
+    elif qty <= 0:
+        print("Qty Cant Less then 0")
+    else:
+        inventory[item] -= qty
+        print(f"Thanks For your Buying\nRemaining Stock {inventory[item]}")

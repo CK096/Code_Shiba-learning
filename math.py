@@ -13,6 +13,8 @@ apples *= 2
 print(apples)
 apples = apples / 2
 print(apples)
+apples = apples // 2
+print(apples) #留整数
 apples /= 2
 print(apples)
 # 指数 (平方， 三次方)

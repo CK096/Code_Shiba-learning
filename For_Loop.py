@@ -7,6 +7,9 @@ for x in range(1,11):
 # 要倒转的话可以加入 (reversed)
 for y in reversed(range(1,11)):
     print(y)
+for z in range(1,11,2): #第三个，那个2代表每次算的第二个
+    print(z)
+
 
 credit_card = "1234-5678-9012-3456"
 for a in credit_card:

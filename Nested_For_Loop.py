@@ -22,7 +22,14 @@ for y in range(1,6):
     for x in range(1,y+1):
         print("*",end="")
     print()
- 
+#反着叠加
+for y in range(1,6):
+    for x in range(5-y):
+        print(" ",end="")
+    for x in range(1,y+1):
+        print("*",end="")
+    print()
+
 #过滤问题
 for j in range(1,5):
     for k in range(1,5):

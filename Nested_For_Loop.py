@@ -17,6 +17,13 @@ for z in range(row):
         print(symbol,end=" ")
     print()
 
+#不叠加全部，而是渐进式
+for y in range(1,6):
+    for x in range(1,y+1):
+        print("*",end="")
+    print()
+ 
+#过滤问题
 for j in range(1,5):
     for k in range(1,5):
         for l in range(1,5):

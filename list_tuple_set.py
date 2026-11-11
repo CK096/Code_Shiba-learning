@@ -15,6 +15,9 @@ print(fruits)
 
 fruits.append("Grape") #在List里面重复的东西是可以加入的,会出现在最后 (只可以用在list)
 print(fruits)
+
+fruits.insert(2,"Apple") #insert()是从第几个索引加入的意思
+
 print(fruits.count("Grape")) # .count("x")计算有多少
 print(fruits.index("Grape")) # .index("x")搜索位置
 

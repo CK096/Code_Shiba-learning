@@ -24,6 +24,10 @@ print(fruits.index("Grape")) # .index("x")搜索位置
 fruits.remove("Apple") #remove.("x") 这个英文是移除的意思
 print(fruits)
 
+deleted = fruits.pop(1) #pop是跟着index删减
+print(deleted) #特别注意：pop() 可以把删除的元素取出来使用
+
+
 fruits.reverse() #倒着列出来
 print(fruits)
 

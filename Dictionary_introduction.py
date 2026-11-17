@@ -29,3 +29,6 @@ print(capital.values())
 
 #.items() 获得所有键值对
 print(capital.items())
+
+#.clear() 清空dict内容,但保留dict
+capital.clear()

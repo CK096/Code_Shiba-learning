@@ -32,3 +32,11 @@ print(capital.items())
 
 #.clear() 清空dict内容,但保留dict
 capital.clear()
+
+#.setdefault（）当Dict找不到Key时会增加内容，但是有了一样的key就不管用了
+sales = {}
+
+sales.setdefault("Laptop", 10)
+sales.setdefault("Laptop",20) #因为上一行有一样的Key,所以这一行没用
+sales.setdefault("Mouse", 5)
+

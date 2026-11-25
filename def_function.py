@@ -59,4 +59,5 @@ def create_profile(name, age, job):
     return f"{name} is {age} years old and works as {job}"
 
 profile = create_profile(name="Alex",age=28,job="Developer")
+create_profile(job="Developer", age=28, name="Alex") #使用keyword Arguments 可以改变传入顺序
 print(profile)

@@ -45,3 +45,11 @@ def create_name(first,last):
     return first + " " + last
 
 print(create_name("ck", "kok"))
+
+# 这样就算没有输入也可以有默认的值
+def greet(name="Guest"):
+    print(f"Hello {name}")
+
+greet("John")  # Hello John
+greet()        # Hello Guest
+

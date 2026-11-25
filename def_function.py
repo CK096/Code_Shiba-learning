@@ -46,10 +46,17 @@ def create_name(first,last):
 
 print(create_name("ck", "kok"))
 
-# 这样就算没有输入也可以有默认的值
+# 这样就算没有输入也可以有默认的参数
 def greet(name="Guest"):
     print(f"Hello {name}")
 
 greet("John")  # Hello John
 greet()        # Hello Guest
 
+
+#指定keyword Arguments ：调用时直接写出参数名称。
+def create_profile(name, age, job):
+    return f"{name} is {age} years old and works as {job}"
+
+profile = create_profile(name="Alex",age=28,job="Developer")
+print(profile)

@@ -19,3 +19,14 @@ def test(*args, **kwargs):
     print(kwargs)
 
 test(10, 20, 30, name="Alex", age=20)
+
+#Big Example
+def student_info(name,*score,**details):
+    print(f"Student: {name}")
+    print(f"Scores: {score}")
+    total = sum(score)
+    average = total / len(score)
+    print(f"average: {average}")
+    print(f"Details: {details}")
+
+student_info("Alex",80, 90, 85,age=20,country="Malaysia")

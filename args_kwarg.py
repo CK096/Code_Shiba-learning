@@ -13,5 +13,9 @@ def print_info(**info):
         print(f'key: {key}, Value: {value}')
 print_info(name="CK",age="25",Job="unknow")
 
+# args 和 kwargs 一起用
+def test(*args, **kwargs):
+    print(args)
+    print(kwargs)
 
-
+test(10, 20, 30, name="Alex", age=20)
